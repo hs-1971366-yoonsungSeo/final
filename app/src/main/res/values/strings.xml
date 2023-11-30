@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeProject</string>
+    <string name="이메일">이메일</string>
+    <string name="회원가입">회원가입</string>
+    <string name="비밀번호입력">비밀번호입력</string>
+    <string name="비밀번호확인">비밀번호확인</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+</resources>

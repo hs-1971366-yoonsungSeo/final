@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home"
+        android:icon="@drawable/carrot1"
+        android:title="home" />
+
+    <item android:id="@+id/chat"
+        android:icon="@drawable/carrot2"
+        android:title="chat" />
+
+    <item android:id="@+id/myPage"
+        android:icon="@drawable/rabbit"
+        android:title="mypage" />
+</menu>
