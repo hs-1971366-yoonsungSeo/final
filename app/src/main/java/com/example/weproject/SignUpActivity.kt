@@ -24,13 +24,8 @@ class SignUpActivity : AppCompatActivity(){
         Firebase.auth.createUserWithEmailAndPassword(userEmail, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    Firebase.auth.signInWithEmailAndPassword(userEmail, password)
-
-                    startActivity(Intent(this, MainActivityBottomNav::class.java))
-                    println("로그인 성공했덩ㅇ 나이떠")
-                    finish()
-                    startActivity(Intent(this, MainActivity::class.java))
-
+                    Toast.makeText(this, "Account created successfully", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, LoginActivity::class.java))
                 } else {
                     Log.w("LoginActivity", "createUserWithEmail", task.exception)
                     Toast.makeText(this, "Account creation failed.", Toast.LENGTH_SHORT).show()
